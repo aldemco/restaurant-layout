@@ -1,0 +1,11 @@
+.product-list{
+    display: grid;
+    grid-auto-columns: max-content; 
+    grid-auto-flow: dense;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: $grid-gutter-width;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 2fr));
+    // grid-template-columns: repeat(12, 1fr);
+}
+
+
