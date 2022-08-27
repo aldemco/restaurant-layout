@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    flex:auto;
+    flex-wrap: wrap;
+    padding: 47px 0 25px 0;
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.logo {
+    max-width: 220px;
+    margin: 0 4em 0 4em;
+    img {
+        display: block;
+        max-width: 100%;
+        width: 30vw;
+    }
+}
