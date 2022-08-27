@@ -9,7 +9,7 @@
     background: #000000;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
-    background-image: url(/images/dist/bg-black.jpg);
+    background-image: url(../images/dist/bg-black.jpg);
     background-size: 100%;
     z-index: 1;
     &__left-column{
@@ -65,7 +65,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: url(/images/dist/wood.jpg);
+        background-image: url(../images/dist/wood.jpg);
         background-size: contain;
         filter: drop-shadow(10px 4px 4px rgba(0, 0, 0, 0.25));
         border-radius: 7px;
@@ -116,7 +116,7 @@
         right: -10px;
         top: -10px;
         bottom: -10px;
-        background-image: url(/images/dist/food-ornament.png);
+        background-image: url(../images/dist/food-ornament.png);
     }
     &__product-options{
         margin-top: auto;
