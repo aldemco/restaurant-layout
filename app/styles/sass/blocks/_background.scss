@@ -1,0 +1,158 @@
+.bg-image{
+    position: fixed;
+    margin-top: -40px;
+    z-index: -1;
+    &_tomato{
+        width: 484px;
+        height: 354px;
+        right: 11px;
+        top: 56px;
+        background: url(/images/dist/tm.png);
+        animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    }
+    &_basilic{
+        width: 165px;
+        height: 174px;
+        right: 11px;
+        top: 410px;
+        background: url(/images/dist/bs.png);
+        animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    }
+    &_tor{
+        width: 432px;
+        height: 492px;
+        right: 11px;
+        top: 380px;
+        background: url(/images/dist/tor.png);
+        animation: puff-in-center 0.9s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    }
+    &_rosemary{
+        width: 203px;
+        height: 145px;
+        right: 264px;
+        top: 653px;
+        background: url(/images/dist/rosemary.png);
+        animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    }
+    &_rosemary2{
+        width: 255px;
+        height: 233px;
+        right: 145px;
+        top: 806px;
+        background: url(/images/dist/rs.png);
+        animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    }
+    &_rosemary3{
+        width: 155px;
+        height: 204px;
+        left: 347px;
+        top: 51px;
+        background: url(/images/dist/rosmarine.png);
+        animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    }
+    &_garlic{
+        width: 146px;
+        height: 168px;
+        left: 201px;
+        top: 153px;
+         animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+        background: url(/images/dist/garlic.png);
+    }
+    &_tor2{
+        width: 212px;
+        height: 174px;
+        left: 9px;
+        top: 222px;
+        background: url(/images/dist/tor-2.png);
+        animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    }
+    &_red_pepper{
+        width: 173px;
+        height: 196px;
+        left: 207px;
+        top: 352px;
+        background: url(/images/dist/red-pepper.png);
+        animation: puff-in-center 0.8s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    }
+
+    &_gren_pepper{
+        width: 226px;
+        height: 145px;
+        left: 9px;
+        top: 461.07px;
+        transform: rotate(-16.73deg);
+        background: url(/images/dist/green-pepper.png);
+        animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    }
+
+    &_small_rosemary{
+        width: 140px;
+        height: 181px;
+        left: 45px;
+        top: 534px;
+        background: url(/images/dist/small-rosamrine.png);
+        animation: puff-in-center 0.6s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    }
+
+    &_basilic2{
+        height: 147px;
+        left: 185px;
+        top: 534px;
+        width: 155px;
+        background: url(/images/dist/bs.png);
+        animation: puff-in-center 0.8s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    }
+
+    &_rosemary4{
+        height: 157px;
+        left: 43px;
+        top: 560px;
+        width: 171px;
+        background: url(/images/dist/rosemary.png);
+        animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    }
+
+    &_tomato-cherry{
+        width: 365px;
+        height: 328px;
+        left: 98px;
+        top: 674px;
+        background: url(/images/dist/tomatto-chery.png);
+        animation: puff-in-center 0.9s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    }
+    
+
+}
+
+ @-webkit-keyframes puff-in-center {
+    0% {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes puff-in-center {
+    0% {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
