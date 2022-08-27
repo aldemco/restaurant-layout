@@ -1,0 +1,11 @@
+a {
+    color: $textcolor;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 936px;
+    margin: auto;
+    padding: 0 $gutter-container 0 $gutter-container;
+} 
+
