@@ -8,12 +8,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 	const offsetImages  = () =>{
+		let offset, cf = 2;
+		console.log(123)
+		if(window.innerWidth === window.screen.width) {
+			 offset = -1000;
+		} else {
+			 offset  =  (window.innerWidth - window.screen.width) / cf ;
+		}
+		
 		rightImages.forEach(element => {
-			let offset  =  ( window.innerWidth- window.screen.width) / 2 ;
 			element.style.marginRight = offset + 'px';
 		});
 		leftImages.forEach(element => {
-			let offset  =  ( window.innerWidth- window.screen.width) / 2 ;
 			element.style.marginLeft = offset + 'px';
 		});
 	}
