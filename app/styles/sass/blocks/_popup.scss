@@ -29,7 +29,8 @@
         justify-content: space-between;
     }
     @media screen and (max-width: 576px){
-        flex-direction: column;
+        max-height: 98%;
+        overflow-y: auto;
         &__left-column{
             width: 100%;
         }
@@ -59,6 +60,10 @@
         &_right{
             right: -10px;
             top: 31px;
+            @media screen and (max-width: 576px){
+                top: initial;
+                bottom: 0;
+            }
         }
     }
     &__slider{
