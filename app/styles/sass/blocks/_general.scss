@@ -9,3 +9,20 @@ a {
     padding: 0 $gutter-container 0 $gutter-container;
 } 
 
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #19191b;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #19191b;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #404040;
+}
