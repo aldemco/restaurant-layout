@@ -1,5 +1,3 @@
-// // Import vendor jQuery plugin example
-// import '~/app/libs/mmenu/dist/mmenu.js'
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -9,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const offsetImages  = () =>{
 		let offset, cf = 2;
-		console.log(123)
+
 		if(window.innerWidth === window.screen.width) {
 			 offset = -1000;
 		} else {
@@ -24,16 +22,20 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 
-	const popUpInit = (popupSelector, openLinkSelector) => {
+	const popUpInit = (popupSelector, openLinkSelector, overlaySelector) => {
 		const popUp = document.querySelector(popupSelector);
 		const openPopupBtns = document.querySelectorAll(openLinkSelector);
 		const closeBtns = popUp.querySelectorAll('.popup__close');
-		const openPopup  = () => {
-			console.log((popupSelector+'_active').slice(1))
+		const overlays = popUp.querySelectorAll(overlaySelector);
+
+		const openPopup  = (event) => {
 			popUp.classList.add((popupSelector+'_active').slice(1));
+			event.preventDefault();
 		}
-		const closePopup  = () => {
+		
+		const closePopup  = (event) => {
 			popUp.classList.remove((popupSelector+'_active').slice(1));
+			event.preventDefault();
 		}
 
 		openPopupBtns.forEach(element => {
@@ -43,10 +45,15 @@ document.addEventListener('DOMContentLoaded', () => {
 		closeBtns.forEach(element => {
 			element.addEventListener('click', closePopup);
 		});
+
+		overlays.forEach(element => {
+			element.addEventListener('click', closePopup);
+		});
+
 	}
 
 
-	popUpInit('.popup-screen', '.popup1')
+	popUpInit('.popup-screen', '.popup1', '.popup-background')
 	offsetImages()
 	window.addEventListener(`resize`, offsetImages, false)
 
